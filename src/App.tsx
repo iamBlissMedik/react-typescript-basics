@@ -37,7 +37,7 @@ function App() {
         <Heading>Oscar goes to school</Heading>
       </Oscar>
       <Greet name="Bliss" number={10} isLoggedIn={true} />
-      <Button handleClick={() => console.log("clicked")} />
+      <Button handleClick={(event,id) => console.log("clicked")} />
     </div>
   );
 }
