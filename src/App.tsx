@@ -2,6 +2,7 @@ import "./App.css";
 import Button from "./components/Button";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
+import Input from "./components/Input";
 import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
@@ -37,7 +38,11 @@ function App() {
         <Heading>Oscar goes to school</Heading>
       </Oscar>
       <Greet name="Bliss" number={10} isLoggedIn={true} />
-      <Button handleClick={(event,id) => console.log("clicked")} />
+      <Button handleClick={(event, id) => console.log("clicked")} />
+      <Input
+        handleChange={(event) => console.log(event.target.value)}
+        value=""
+      />
     </div>
   );
 }

@@ -2,6 +2,6 @@ type HeadingProps = {
   children: string;
 };
 const Heading: React.FC<HeadingProps> = () => {
-  return <div>Placeholder tex</div>;
+  return <div>Placeholder text</div>;
 };
 export default Heading;
