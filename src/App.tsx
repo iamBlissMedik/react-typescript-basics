@@ -1,5 +1,7 @@
 import "./App.css";
 import Greet from "./components/Greet";
+import Heading from "./components/Heading";
+import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
@@ -25,10 +27,15 @@ function App() {
   };
   return (
     <div className="App">
-      <Greet name="Bliss" number={10} isLoggedIn={true} />
+      {/* <Greet name="Bliss" number={10} isLoggedIn={true} />
       <Person personName={personName} />
-      <PersonList nameList={nameList} />
+      <PersonList nameList={nameList} /> */}
       <Status status="success" />
+      <Heading>Placeholder text</Heading>
+      <Oscar>
+        <Heading>Oscar goes to school</Heading>
+      </Oscar>
+      <Greet name="Bliss" number={10} isLoggedIn={true} />
     </div>
   );
 }
