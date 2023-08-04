@@ -1,6 +1,14 @@
-const Person = () => {
+type Props = {
+  personName: {
+    firstName: string;
+    lastName: string;
+  };
+};
+const Person: React.FC<Props> = ({ personName: { firstName, lastName } }) => {
   return (
-    <div>Person</div>
-  )
-}
-export default Person
+    <div>
+      {firstName} {lastName}{" "}
+    </div>
+  );
+};
+export default Person;
