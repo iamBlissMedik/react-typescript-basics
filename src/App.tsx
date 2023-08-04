@@ -4,6 +4,20 @@ import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 
 function App() {
+  const nameList = [
+    {
+      firstName: "Ellams",
+      lastName: "Bliss",
+    },
+    {
+      firstName: "Ellams",
+      lastName: "Bright",
+    },
+    {
+      firstName: "Ellams",
+      lastName: "Brilliance",
+    },
+  ];
   const personName = {
     firstName: "Ellams",
     lastName: "Bliss",
@@ -12,7 +26,7 @@ function App() {
     <div className="App">
       <Greet name="Bliss" number={10} isLoggedIn={true} />
       <Person personName={personName} />
-      <PersonList />
+      <PersonList nameList={nameList} />
     </div>
   );
 }

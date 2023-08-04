@@ -1,8 +1,7 @@
+import { personName } from "../types/personName";
+
 type Props = {
-  personName: {
-    firstName: string;
-    lastName: string;
-  };
+  personName: personName;
 };
 const Person: React.FC<Props> = ({ personName: { firstName, lastName } }) => {
   return (
