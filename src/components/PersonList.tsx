@@ -1,12 +1,9 @@
-import { personName } from "../types/personName";
+import { PersonsListProps } from "../types/Person";
 
-type nameList = {
-  nameList: personName[];
-};
-const PersonList: React.FC<nameList> = ({ nameList }) => {
+const PersonList: React.FC<PersonsListProps> = ({ names }) => {
   return (
     <div>
-      {nameList.map((name) => (
+      {names.map((name) => (
         <h2 key={name.lastName}>
           {name.firstName} {name.lastName}
         </h2>
