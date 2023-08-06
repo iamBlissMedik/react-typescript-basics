@@ -1,4 +1,6 @@
 import "./App.css";
+import Private from "./components/auth/Private";
+import Profile from "./components/auth/Profile";
 // import Button from "./components/Button";
 // import Container from "./components/Container";
 // import Greet from "./components/Greet";
@@ -46,9 +48,7 @@ function App() {
       />
       <Container styles={{ border: "1px solid black", padding: "1rem" }} /> */}
 
-
-
-      
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
