@@ -1,6 +1,7 @@
 import "./App.css";
 import Private from "./components/auth/Private";
 import Profile from "./components/auth/Profile";
+import List from "./components/generics/List";
 // import Button from "./components/Button";
 // import Container from "./components/Container";
 // import Greet from "./components/Greet";
@@ -48,7 +49,31 @@ function App() {
       />
       <Container styles={{ border: "1px solid black", padding: "1rem" }} /> */}
 
-      <Private isLoggedIn={true} component={Profile} />
+      {/* <Private isLoggedIn={true} component={Profile} /> */}
+      {/* <List
+        items={["batman", "superman", "wonder woman"]}
+        onClick={(item) => console.log(item)}
+      /> */}
+      <List
+        items={[
+          {
+            id: 1,
+            firstName: "Ellams",
+            lastName: "Bliss",
+          },
+          {
+            id: 2,
+            firstName: "Ellams",
+            lastName: "Bright",
+          },
+          {
+            id: 3,
+            firstName: "Ellams",
+            lastName: "Brilliance",
+          },
+        ]}
+        onClick={(item) => console.log(item)}
+      />
     </div>
   );
 }
